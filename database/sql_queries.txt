@@ -1,0 +1,24 @@
+CREATE DATABASE Quiz;
+USE Quiz;
+CREATE TABLE quiz (id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, question VARCHAR(100), answer1 VARCHAR(100), answer2 VARCHAR(100), answer3 VARCHAR(100), answer4 VARCHAR(100));
+
+INSERT INTO quiz (question, answer1, answer2, answer3, answer4) VALUES('which fruit is yellow', 'orange', 'banana', 'apple', 'watermelon');
+INSERT INTO quiz (question, answer1, answer2, answer3, answer4) VALUES('which car brand is not german', 'audi', 'volkswagen', 'bmw', 'peugeot');
+INSERT INTO quiz (question, answer1, answer2, answer3, answer4) VALUES('what is the capital of france', 'london', 'beijing', 'berlin', 'paris');
+
+UPDATE quiz SET answer3='copenhagen' WHERE id=3;
+SELECT * FROM quiz WHERE id=3;
++----+-------------------------------+---------+---------+------------+---------+
+| id | question                      | answer1 | answer2 | answer3    | answer4 |
++----+-------------------------------+---------+---------+------------+---------+
+|  3 | what is the capital of france | london  | beijing | copenhagen | paris   |
++----+-------------------------------+---------+---------+------------+---------+
+DELETE FROM quiz WHERE answer4='paris';
+
+SELECT * FROM quiz ORDER BY id DESC;
++----+-------------------------------+---------+------------+---------+------------+
+| id | question                      | answer1 | answer2    | answer3 | answer4    |
++----+-------------------------------+---------+------------+---------+------------+
+|  2 | which car brand is not german | audi    | volkswagen | bmw     | peugeot    |
+|  1 | which fruit is yellow         | orange  | banana     | apple   | watermelon |
++----+-------------------------------+---------+------------+---------+------------+
