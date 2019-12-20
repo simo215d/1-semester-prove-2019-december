@@ -7,10 +7,19 @@
 
 public class Main {
 
-    // TODO Din kode her
-
-    public String hello(String navn) {
-        return "";
+    public static void main(String[] args) {
+        //Opgave 1.a
+        System.out.println("Hello world!");
+        //Opgave 1.b
+        Main main = new Main();
+        System.out.println(main.hello("Simon"));
+        //Opgave 1.c
+        System.out.println(main.hello(""));
     }
 
+    public String hello(String navn) {
+        if (navn.equals("")){
+            return "Hello World!";
+        } else return "Hello "+navn+"!";
+    }
 }
