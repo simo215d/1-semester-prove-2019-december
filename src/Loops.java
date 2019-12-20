@@ -1,12 +1,8 @@
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.Scanner;
 
 /**
- * Developed by András Ács (acsandras@gmail.com)
- * Zealand / www.zealand.dk
- * Licensed under the MIT License
- * 17/12/2019
+ * Lavet af Simon Grove
+ * 20/12/2019
  */
 
 public class Loops {
@@ -37,6 +33,7 @@ public class Loops {
 
     /**
      * Viser en liste med brugere i konsollen i omvendt rækkefølge
+     * Denne metode tæller ned fra længden af brugere -1 og printer deres navn indtil vi er nået igennem vores array
      */
     public void printBrugereReverseArr() {
         for (int i = getBrugere().length-1; i >= 0; i--) {
@@ -44,6 +41,7 @@ public class Loops {
         }
     }
 
+    //den looper og beder om et nyt tal indtil vi skriver 0
     public void waitingFor0() {
         Scanner input = new Scanner(System.in);
         while (true){

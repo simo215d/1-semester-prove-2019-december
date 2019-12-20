@@ -3,6 +3,7 @@ package quiz;
 import java.util.Scanner;
 
 public class Quiz {
+    //den er static så vi slipper for at oprette en ny klasse af Quiz i vores main()
     public static Sporgsmaal sporgsmaal = new Sporgsmaal();
     public static void main(String[] args) {
         //the following lines sets up the game
@@ -17,10 +18,12 @@ public class Quiz {
         sporgsmaal.setPoint(10);
         //the following lines are the actual game in the console
         System.out.println(sporgsmaal.getSporgsmaalsTekst() + " Enter a the number of your answer:");
+        //henter svarene fra sporgsmaals instansen og printer deres svar
         for (int i = 0; i < sporgsmaal.getSvar().length; i++) {
             System.out.println("Svar " + i + ": " + sporgsmaal.getSvar()[i].getSvarmulighed());
         }
         Scanner input = new Scanner(System.in);
+        //en løkke som beder dig indtaste dig svar indtil du rammer rigtig
         while (true) {
             System.out.print("Enter your answer: ");
             int answer = input.nextInt();

@@ -6,6 +6,7 @@ public class Sporgsmaal implements Translatable{
     private Svar[] svar = new Svar[4];
     private int korrektSvarIndex;
 
+    //sporgsmaalsteksten skal være højest 100 karaktere
     public void setSporgsmaalsTekst(String sporgsmaalsTekst) {
         if (sporgsmaalsTekst.length()>100){
             System.out.println("Too long question!");
@@ -13,12 +14,14 @@ public class Sporgsmaal implements Translatable{
         } else this.sporgsmaalsTekst = sporgsmaalsTekst;
     }
 
+    //point må ikke være negativ
     public void setPoint(int point) {
         if (point<0){
             throw new IllegalArgumentException("Point skal være større end 0");
         } else this.point = point;
     }
 
+    //vi kopirere elementerne fra det array vi får i parametret og indsætter dem i klassens egen array
     public void setSvar(Svar[] svar) {
         this.svar[0]=svar[0];
         this.svar[1]=svar[1];
@@ -46,6 +49,7 @@ public class Sporgsmaal implements Translatable{
         return svar;
     }
 
+    //denne metode har vi implementeret fra Translatable og den gør ikke noget endnu
     @Override
     public String translate(String language) {
         if (language.equals(Language.DANISH)) {

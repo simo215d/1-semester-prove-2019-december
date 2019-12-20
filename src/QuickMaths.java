@@ -1,10 +1,9 @@
 import java.util.Scanner;
 
 /**
- * Developed by András Ács (acsandras@gmail.com)
- * Zealand / www.zealand.dk
- * Licensed under the MIT License
- * 13/12/2019
+ * Lavet af Simon Grove
+ * Denne klasse illustrere grundlæggende principper angående metoder, while loops og souts.
+ * 20/12/2019
  */
 
 public class QuickMaths {
@@ -16,10 +15,13 @@ public class QuickMaths {
         return (a+b)/2;
     }
 
+    //denne metode returnere summen af 2 integers
     public int sum(int a, int b){
         return a+b;
     }
 
+    //denne metode beder om at man indtaster 2 tal og så printer den summen og gennemsnittet af tallene
+    //det gør den i al uendelighed.
     public void start(){
         Scanner input = new Scanner(System.in);
         while (true){
@@ -34,6 +36,7 @@ public class QuickMaths {
         }
     }
 
+    //denne metode gør at klassen kan køres og den sætter start metoden i gang.
     public static void main(String[] args) {
         QuickMaths quickMaths = new QuickMaths();
         quickMaths.start();

@@ -1,8 +1,7 @@
 /**
- * Developed by András Ács (acsandras@gmail.com)
- * Zealand / www.zealand.dk
- * Licensed under the MIT License
- * 13/12/2019
+ * Lavet af Simon Grove
+ * Klassen her handler om hello world og hvordan vi kan behandle Strings
+ * 20/12/2019
  */
 
 public class Main {
@@ -17,6 +16,7 @@ public class Main {
         System.out.println(main.hello(""));
     }
 
+    //denne metode printer hello world hvis navn er en tom String. ellers printer den hello og navnent angivet i parametret
     public String hello(String navn) {
         if (navn.equals("")){
             return "Hello World!";
