@@ -1,3 +1,5 @@
+package opgaver12345;
+
 /**
  * Lavet af Simon Grove
  * Denne klasse illustrere 1 eksempel på typecasting og modulus. Jeg har også refaktureret koden så felterne har passende typer.

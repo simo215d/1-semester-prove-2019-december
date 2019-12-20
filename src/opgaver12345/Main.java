@@ -1,3 +1,5 @@
+package opgaver12345;
+
 /**
  * Lavet af Simon Grove
  * Klassen her handler om hello world og hvordan vi kan behandle Strings

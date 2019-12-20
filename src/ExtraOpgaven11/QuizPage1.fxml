@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.text.Font?>
+
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ExtraOpgaven11.QuizPage1Controller">
+    <children>
+        <AnchorPane prefHeight="400.0" prefWidth="364.0">
+            <children>
+                <Label fx:id="labelQuestion" layoutX="35.0" layoutY="95.0" text="Which fruit is yellow?">
+                    <font>
+                        <Font name="System Bold" size="26.0" />
+                    </font>
+                </Label>
+                <Label fx:id="labelMessage" layoutX="35.0" layoutY="360.0" text="Message: Pls submit an answer...">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Label>
+                <ImageView fx:id="iv1" fitHeight="150.0" fitWidth="200.0" layoutX="49.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../quiz/FruitBowl.png" />
+                    </image>
+                </ImageView>
+                <Label fx:id="labelTitle" layoutX="59.0" layoutY="35.0" text="Quiz - Question 1">
+                    <font>
+                        <Font name="System Bold" size="26.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <Region prefHeight="400.0" prefWidth="77.0" style="-fx-background-color: BLACK;" />
+        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="356.0">
+            <children>
+                <CheckBox fx:id="checkbox1" layoutX="75.0" layoutY="79.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="141.0" text="Orange" />
+                <CheckBox fx:id="checkbox2" layoutX="75.0" layoutY="120.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="141.0" text="Banana" />
+                <CheckBox fx:id="checkbox3" layoutX="75.0" layoutY="167.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="141.0" text="Apple" />
+                <CheckBox fx:id="checkbox4" layoutX="75.0" layoutY="214.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="141.0" text="Watermelon" />
+                <Button fx:id="buttonConfirm" layoutX="75.0" layoutY="288.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="109.0" text="Submit" onAction="#submit"/>
+            </children>
+        </AnchorPane>
+    </children>
+</HBox>

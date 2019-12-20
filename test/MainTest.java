@@ -1,4 +1,5 @@
 import junit.framework.TestCase;
+import opgaver12345.Main;
 
 public class MainTest extends TestCase {
 

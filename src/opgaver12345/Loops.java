@@ -1,3 +1,5 @@
+package opgaver12345;
+
 import java.util.Scanner;
 
 /**
